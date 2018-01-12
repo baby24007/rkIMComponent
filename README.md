@@ -41,5 +41,17 @@ gulp beforepack --env gray    //一般只在运维部署时执行，本地不需
 `http://10.10.0.115/public/serviceclound/test.html`
 
 ## 文件结构说明
-> -/embeded
-    -
+`/doc/embeded目录结构.png`
+```
+/embeded
+    /im
+        /chat
+            /build                              //打包的dist
+            /lib                                //js lib
+            /module                             
+                /chat                           //IM基础组件
+                /customerService                //客服小组件的，其中包括一个chat实例（csChat），继承自$.rk.chatBaseCtrl
+                imBase.js   
+            /source                             //样式资源文件
+        /loader                  
+```
